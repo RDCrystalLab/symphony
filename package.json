@@ -1,0 +1,29 @@
+{
+  "name": "symphony",
+  "version": "1.0.0",
+  "description": "A long-running automation service that orchestrates coding agents for issue-driven development",
+  "type": "module",
+  "main": "dist/cli/index.js",
+  "bin": {
+    "symphony": "dist/cli/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli/index.js",
+    "dev": "tsx src/cli/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src/"
+  },
+  "dependencies": {
+    "chokidar": "^4.0.0",
+    "liquidjs": "^10.17.0",
+    "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
